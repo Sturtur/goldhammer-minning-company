@@ -1,45 +1,58 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
-    <title>GMC Secure Archive</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GMC Internal Archive</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<div id="warning-screen">
+    <div id="warning-screen">
 
-    <div class="warning-box">
-        <h1>GMC INTERNAL NETWORK</h1>
+        <div class="warning-box">
 
-        <p class="alert">
-            ADVERTENCIA DE SEGURIDAD
-        </p>
+            <div class="warning-header">
+                GMC INTERNAL NETWORK
+            </div>
 
-        <p>
-            Este archivo contiene información restringida.
-            El acceso está limitado únicamente a personal autorizado.
-        </p>
+            <h1>ACCESO RESTRINGIDO</h1>
 
-        <p>
-            El acceso no autorizado será registrado y reportado.
-        </p>
+            <p>
+                Este sistema contiene documentación interna propiedad de la GMC.
+            </p>
 
-        <button onclick="authorize()">
-            AUTORIZAR ACCESO
-        </button>
+            <p>
+                El acceso está limitado a personal autorizado con nivel de autorización adecuado.
+            </p>
+
+            <p>
+                Toda actividad dentro del sistema podrá ser registrada y auditada.
+            </p>
+
+            <button onclick="authorize()">
+                AUTORIZAR ACCESO
+            </button>
+
+        </div>
 
     </div>
 
-</div>
+    <div id="terminal-screen">
 
-<div id="terminal-screen">
+        <div class="terminal-header">
+            GMC SECURE ARCHIVE v3.17
+        </div>
 
-    <div id="terminal-output"></div>
+        <pre id="terminal-output"></pre>
 
-</div>
+    </div>
 
-<script src="script.js"></script>
+    <script src="script.js"></script>
 
 </body>
+
 </html>
