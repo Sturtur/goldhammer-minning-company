@@ -1,0 +1,47 @@
+body{
+    margin:0;
+    background:#000;
+    color:#00ff66;
+    font-family:Consolas, monospace;
+}
+
+#warning-screen{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+.warning-box{
+    border:2px solid #00ff66;
+    padding:30px;
+    width:700px;
+}
+
+button{
+    background:#000;
+    color:#00ff66;
+    border:1px solid #00ff66;
+    padding:10px 20px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#00ff66;
+    color:#000;
+}
+
+#terminal-screen{
+    display:none;
+    padding:20px;
+}
+
+.cursor{
+    animation:blink 1s infinite;
+}
+
+@keyframes blink{
+    50%{
+        opacity:0;
+    }
+}
