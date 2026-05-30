@@ -78,7 +78,7 @@ function typeWriter(text){
 
         if(i < text.length){
 
-            document.getElementById("terminal-output").innerHTML += text.charAt(i);
+            document.getElementById("terminal-output").textContent += text.charAt(i);
 
             i++;
             setTimeout(typing,speed);
